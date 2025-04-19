@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)file:///C:/Users/Prime/git%20branch%20&%20rebase/admission.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SG Highschool - Admission Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* Light blue gradient background */
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            max-width: 90%;
+            text-align: left;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: #004080; /* SG Blue */
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .form-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .submit-btn, .reset-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        .submit-btn {
+            background-color: #008000; /* SG Green */
+            color: white;
+        }
+
+        .reset-btn {
+            background-color: #ff0000; /* Red */
+            color: white;
+        }
+
+        .submit-btn:hover {
+            background-color: #006000;
+        }
+
+        .reset-btn:hover {
+            background-color: #cc0000;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>SG Highschool Admission Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" name="studentName" required="">
+            </div>
+            <div class="form-group">
+                <label for="uidNumber">UID Number:</label>
+                <input type="text" id="uidNumber" name="uidNumber" required="">
+            </div>
+            <div class="form-group">
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required="">
+            </div>
+            <div class="form-group">
+                <label for="permanentAddress">Permanent Address:</label>
+                <textarea id="permanentAddress" name="permanentAddress" rows="4" required=""></textarea>
+            </div>
+            <div class="form-buttons">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+        </form>
+    </div>
+
+</body></html>
